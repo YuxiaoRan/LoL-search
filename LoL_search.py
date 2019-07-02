@@ -1,3 +1,8 @@
+# Search for an user on na.op.gg
+# Author: Yuxiao Sean Ran
+# Date: 7/2/2019
+
+# import packages
 from selenium import webdriver
 import time
 import sys
@@ -5,8 +10,8 @@ import sys
 # parse username
 username = ""
 for i in range(1, len(sys.argv)):
-	username += sys.argv[i]
-	username += " "
+    username += sys.argv[i]
+    username += " "
 username = username[0 : len(username) - 1]
 
 url = "https://na.op.gg/"
